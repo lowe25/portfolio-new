@@ -1,0 +1,25 @@
+@use "../settings/screen-width" as screen-sizes;
+
+@mixin minmax($min-width: 0, $max-width: 0) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin max($max-width: 0) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin min($min-width: 0) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: screen-sizes.$sp-width) {
+    @content;
+  }
+}

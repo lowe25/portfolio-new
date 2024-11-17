@@ -1,4 +1,9 @@
+@use "../base/font-family" as ff;
+@use "../base/colors" as color;
+
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ff.$Raleway;
   font-size: 10px;
+  scroll-behavior: smooth;
+  color: color.$white;
 }

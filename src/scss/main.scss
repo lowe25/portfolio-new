@@ -1,2 +1,14 @@
 @use "elements/reset";
 @use "elements/global";
+
+//Setting
+@use "settings/helper";
+
+//Base
+@use "base/font-family";
+
+//Common
+@use "common/footer";
+
+//Sections / Pages
+@use "page/landing";
