@@ -29,7 +29,7 @@ function App() {
           </div>
           <div className="landing__about-desc">
             <img
-              src="/src/assets/img/profile.jpg"
+              src="/public/img/profile.jpg"
               alt="Profile Picture"
               className="landing__about-img"
             />
@@ -74,56 +74,56 @@ function App() {
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/html.png"
+                  src="/public/img/html.png"
                   alt="HTML Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/css.png"
+                  src="/public/img/css.png"
                   alt="CSS Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/javascript.png"
+                  src="/public/img/javascript.png"
                   alt="JavaScript Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/react-logo.png"
+                  src="/public/img/react-logo.png"
                   alt="HTML Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/pugjs.jpg"
+                  src="/public/img/pugjs.jpg"
                   alt="PugJs Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/sass.png"
+                  src="/public/img/sass.png"
                   alt="Scss Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/typescript.png"
+                  src="/public/img/typescript.png"
                   alt="TypeScript Logo"
                 />
               </div>
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
-                  src="src/assets/img/github.png"
+                  src="/public/img/github.png"
                   alt="github Logo"
                 />
               </div>
@@ -153,7 +153,7 @@ function App() {
               <div>
                 <img
                   className="landing__contact-logo"
-                  src="/src/assets/img/gmail.png"
+                  src="/public/img/gmail.png"
                   alt="Gmail Logo"
                 />
               </div>
@@ -168,7 +168,7 @@ function App() {
               <div>
                 <img
                   className="landing__contact-logo"
-                  src="/src/assets/img/linkedin.png"
+                  src="/public/img/linkedin.png"
                   alt="Linkedin Logo"
                 />
               </div>
@@ -184,7 +184,7 @@ function App() {
               <div>
                 <img
                   className="landing__contact-logo landing__contact-logo--img2"
-                  src="/src/assets/img/smartphone1.png"
+                  src="/public/img/smartphone1.png"
                   alt="Smartphone Logo"
                 />
               </div>
