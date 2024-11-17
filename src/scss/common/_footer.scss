@@ -1,0 +1,19 @@
+@use "../base/font-family" as ff;
+@use "../base/colors" as color;
+@use "../base/mediaqueries" as mq;
+
+.footer {
+  background-color: color.$black-2d2;
+  padding: 20px 0;
+  text-align: center;
+
+  &__txt {
+    font-size: 1.6rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: color.$white;
+  }
+}
