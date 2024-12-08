@@ -61,6 +61,12 @@
   &__section-wrap {
     display: flex;
     justify-content: center;
+
+    &--project {
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
   }
 
   &__section-title {
@@ -177,6 +183,70 @@
   &__projects {
     background-color: color.$black-2d2;
     padding: 50px 0 100px;
+  }
+
+  &__project-list {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__project-blk {
+    width: 100%;
+    max-width: 477px;
+    border: 2px solid color.$white;
+    padding: 15px;
+    @include mq.sp {
+      max-width: initial;
+    }
+  }
+
+  &__project-btn-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px;
+  }
+
+  &__project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #262323;
+    border: 1px solid color.$white;
+    color: color.$white;
+    font-size: 1.6rem;
+    font-family: ff.$Monter;
+    text-decoration: none;
+
+    &:hover {
+      background-color: color.$black;
+      transition-duration: 1s;
+    }
+  }
+
+  &__tech-abt {
+    display: block;
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: ff.$Raleway;
+    font-weight: 700;
+  }
+
+  &__tech-wrap {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__tech-logo {
+    height: 40px;
   }
 
   &__skills {
