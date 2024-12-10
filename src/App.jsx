@@ -134,6 +134,9 @@ function App() {
 
       <section className="landing__projects" id="projects">
         <div className="container">
+          <div className="landing__section-wrap">
+            <h1 className="landing__section-title">Projects</h1>
+          </div>
           <div className="landing__section-wrap landing__section-wrap--project">
             <div className="landing__project-blk">
               <span className="landing__tech-abt">Photography Website</span>
