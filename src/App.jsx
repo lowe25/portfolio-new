@@ -123,6 +123,13 @@ function App() {
               <div className="landing__skills-block">
                 <img
                   className="landing__skills-img"
+                  src="/img/tailwind-logo.svg"
+                  alt="TypeScript Logo"
+                />
+              </div>
+              <div className="landing__skills-block">
+                <img
+                  className="landing__skills-img"
                   src="/img/github.png"
                   alt="github Logo"
                 />
@@ -203,6 +210,40 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="landing__project-blk">
+              <span className="landing__tech-abt">
+                Emman CCTV Website
+              </span>
+              <div className="landing__project-btn-wrap">
+                <a
+                  href="https://lowe25.github.io/company-landing/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="landing__project-btn"
+                >
+                  Demo
+                </a>
+              </div>
+
+              <span className="landing__tech-abt">Written In:</span>
+              <div className="landing__tech-wrap">
+                <div className="landing__tech">
+                  <img
+                    src="./img/react-logo.png"
+                    className="landing__tech-logo"
+                    alt="ReactJs Logo"
+                  />
+                </div>
+                <div className="landing__tech">
+                  <img
+                    src="./img/tailwind-logo.svg"
+                    className="landing__tech-logo"
+                    alt="Tailwind CSS Logo"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -265,18 +306,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer__container">
-          <h2>Copyright 2024. Allright reserved</h2>
-          <br />
-          <p className="footer__txt"> Icons made Freepik</p>
-          <br />
-          <a
-            href="https://www.flaticon.com/"
-            target="_blank"
-            className="footer__link"
-            title="Flaticon"
-          >
-            www.flaticon.com
-          </a>
+          <h2>Copyright 2025. Allright reserved</h2>
         </div>
       </footer>
     </>

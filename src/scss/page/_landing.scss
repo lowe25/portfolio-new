@@ -65,7 +65,8 @@
     &--project {
       margin-top: 40px;
       align-items: center;
-      gap: 10px;
+      justify-content: flex-start;
+      gap: 17px;
       flex-wrap: wrap;
     }
   }
