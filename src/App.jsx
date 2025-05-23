@@ -251,7 +251,7 @@ function App() {
               </span>
               <div className="landing__project-btn-wrap">
                 <a
-                  href="https://biography-site.netlify.app/profile"
+                  href="https://biography-site.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="landing__project-btn"
