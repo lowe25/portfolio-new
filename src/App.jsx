@@ -58,11 +58,13 @@ function App() {
                     responsive static websites. Using PugJs, SASS and
                     TypeScript.
                   </li>
-
-                  <li>
+                  <li className="landing__job-item">
                     Add functionality to static websites using WordPress plugins
                     ACF and MWWP Form.
                   </li>
+                  <li className="landing__job-item">Optimized website load times by using Lazy Loading.</li>
+                  <li className="landing__job-item">Working with version control systems and source code management tools (e.g., Use Git, GitLab) to keep track of code.</li>
+                  <li className="landing__job-item"> Conducted code reviews with other developers to ensure adherence to coding standards and improve maintainability.</li>
                 </ul>
               </div>
             </div>
