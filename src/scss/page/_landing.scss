@@ -22,6 +22,7 @@
   }
 
   &__desc-heading {
+    text-align: center;
     font-family: ff.$Monter;
     color: color.$white;
     @include mq.sp {

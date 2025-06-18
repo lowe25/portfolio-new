@@ -1,24 +1,27 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./scss/main.scss";
 
 function App() {
   return (
     <>
       <section className="landing__mv">
-        <div className="landing__desc">
-          <h1 className="landing__desc-heading">
-            Hi My Name is Louie Aldrin Cabral Im a Front End Developer
-          </h1>
-        </div>
-        <div className="landing__nav">
-          <a href="#about" className="landing__nav-link">
-            About
-          </a>
-          <a href="#projects" className="landing__nav-link">
-            Projects
-          </a>
-          <a href="#contacts" className="landing__nav-link">
-            Contact
-          </a>
+        <div data-aos="zoom-in-down">
+          <div className="landing__desc">
+            <h1 className="landing__desc-heading">
+              Hi there! I'm Louie and I'm a seasoned Front-End Developer
+            </h1>
+          </div>
+          <div className="landing__nav">
+            <a href="#about" className="landing__nav-link">
+              About
+            </a>
+            <a href="#projects" className="landing__nav-link">
+              Projects
+            </a>
+            <a href="#contacts" className="landing__nav-link">
+              Contact
+            </a>
+          </div>
         </div>
       </section>
 
@@ -27,22 +30,20 @@ function App() {
           <div className="landing__section-wrap">
             <h1 className="landing__section-title">About</h1>
           </div>
-          <div className="landing__about-desc">
+          <div className="landing__about-desc" data-aos="fade-right" data-aos-easing="linear"
+            data-aos-duration="1500">
             <img
               src="/img/profile.jpg"
               alt="Profile Picture"
               className="landing__about-img"
             />
             <span className="landing__about-txt">
-              My name is Louie Aldrin Cabral and Im a Front End Developer based
-              in the Philippines with three years of experience in the industry,
-              A proven track record of developing exceptional UI and translating
-              wireframes into high-quality, responsive code Using PugJS, SCSS
-              and TypeScript.
+              My name is Louieand I'm a Front-End Developer based in the Philippines with 3 years of experience in the industry, a proven track record of developing exceptional UI and translating wireframes into high-quality, responsive code Using PugJS, SCSS and TypeScript.
             </span>
           </div>
 
-          <div className="landing__exp">
+          <div className="landing__exp" data-aos="fade-left" data-aos-easing="linear"
+            data-aos-duration="1500">
             <h2 className="landing__exp-heading">Work Experince</h2>
             <div className="landing__exp-box">
               <div className="landing__job">
@@ -70,7 +71,8 @@ function App() {
             </div>
           </div>
 
-          <div className="landing__skills">
+          <div className="landing__skills" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="1500">
             <h2 className="landing__exp-heading">Skills</h2>
             <div className="landing__skills-wrap">
               <div className="landing__skills-block">
@@ -142,7 +144,8 @@ function App() {
       </section>
 
       <section className="landing__projects" id="projects">
-        <div className="container">
+        <div className="container" data-aos="zoom-in-down" data-aos-easing="linear"
+          data-aos-duration="1500">
           <div className="landing__section-wrap">
             <h1 className="landing__section-title">Projects</h1>
           </div>
@@ -285,12 +288,12 @@ function App() {
       </section>
 
       <section className="landing__contact" id="contacts">
-        <div className="container">
+        <div className="container" data-aos="zoom-in-down">
           <div className="landing__section-wrap">
             <h1 className="landing__section-title">Contact</h1>
           </div>
           <p className="landing__contact-txt">
-            Lets get in touch you can reach out to me by clicking below
+            Let's get in touch!
           </p>
           <div className="landing__contact-wrap">
             <div className="landing__contact-block">
@@ -342,7 +345,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer__container">
-          <h2>Copyright 2025. Allright reserved</h2>
+          <h2>Copyright 2025. All rights reserved.</h2>
         </div>
       </footer>
     </>
