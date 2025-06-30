@@ -283,6 +283,40 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="landing__project-blk">
+              <span className="landing__tech-abt">
+                ACME Real Estate Website
+              </span>
+              <div className="landing__project-btn-wrap">
+                <a
+                  href="https://acme-real-estate.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="landing__project-btn"
+                >
+                  Demo
+                </a>
+              </div>
+
+              <span className="landing__tech-abt">Written In:</span>
+              <div className="landing__tech-wrap">
+                <div className="landing__tech">
+                  <img
+                    src="./img/react-logo.png"
+                    className="landing__tech-logo"
+                    alt="ReactJs Logo"
+                  />
+                </div>
+                <div className="landing__tech">
+                  <img
+                    src="./img/tailwind-logo.svg"
+                    className="landing__tech-logo"
+                    alt="Tailwind CSS Logo"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
