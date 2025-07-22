@@ -152,6 +152,9 @@ function App() {
           <div className="landing__section-wrap landing__section-wrap--project">
             <div className="landing__project-blk">
               <span className="landing__tech-abt">Photography Website</span>
+              <div>
+                <p className="landing__tech-txt">This is a responsive static portfolio website built using React.js and SCSS. It showcases my frontend development skills, with smooth transitions, clean design, and a focus on performance. The site is structured to highlight my projects, skills, and experience as a developer.</p>
+              </div>
               <div className="landing__project-btn-wrap">
                 <a
                   href="https://pensive-goodall-adf491.netlify.app/"
@@ -181,45 +184,11 @@ function App() {
                 </div>
               </div>
             </div>
-
-            <div className="landing__project-blk">
-              <span className="landing__tech-abt">
-                Internet Provider Website
-              </span>
-              <div className="landing__project-btn-wrap">
-                <a
-                  href="https://internet-provider-website-esco-htbvhondj-lowe25.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="landing__project-btn"
-                >
-                  Demo
-                </a>
-              </div>
-
-              <span className="landing__tech-abt">Written In:</span>
-              <div className="landing__tech-wrap">
-                <div className="landing__tech">
-                  <img
-                    src="./img/react-logo.png"
-                    className="landing__tech-logo"
-                    alt="ReactJs Logo"
-                  />
-                </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/sass.png"
-                    className="landing__tech-logo"
-                    alt="SASS Image1"
-                  />
-                </div>
-              </div>
-            </div>
-
             <div className="landing__project-blk">
               <span className="landing__tech-abt">
                 Emman CCTV Website
               </span>
+              <p className="landing__tech-txt">A clean and responsive landing page built with React, TypeScript, and Tailwind CSS. This project showcases a modern layout for Emman CCTV a computer services company located in panguil laguna, featuring smooth navigation, consistent design elements, and mobile-friendly responsiveness.</p>
               <div className="landing__project-btn-wrap">
                 <a
                   href="https://lowe25.github.io/company-landing/"
@@ -242,6 +211,13 @@ function App() {
                 </div>
                 <div className="landing__tech">
                   <img
+                    src="./img/typescript.png"
+                    className="landing__tech-logo"
+                    alt="TypeScript Logo"
+                  />
+                </div>
+                <div className="landing__tech">
+                  <img
                     src="./img/tailwind-logo.svg"
                     className="landing__tech-logo"
                     alt="Tailwind CSS Logo"
@@ -250,10 +226,12 @@ function App() {
               </div>
             </div>
 
+
             <div className="landing__project-blk">
               <span className="landing__tech-abt">
                 Biography Website
               </span>
+              <p className="landing__tech-txt">A sleek and responsive biography website built with React, TypeScript, and Tailwind CSS. It features a structured layout to showcase personal profiles of the late Kobe Bryant, with a clean design and smooth user experience across all devices.</p>
               <div className="landing__project-btn-wrap">
                 <a
                   href="https://biography-site.netlify.app/"
@@ -276,6 +254,13 @@ function App() {
                 </div>
                 <div className="landing__tech">
                   <img
+                    src="./img/typescript.png"
+                    className="landing__tech-logo"
+                    alt="TypeScript Logo"
+                  />
+                </div>
+                <div className="landing__tech">
+                  <img
                     src="./img/tailwind-logo.svg"
                     className="landing__tech-logo"
                     alt="Tailwind CSS Logo"
@@ -283,11 +268,11 @@ function App() {
                 </div>
               </div>
             </div>
-
             <div className="landing__project-blk">
               <span className="landing__tech-abt">
                 ACME Real Estate Website
               </span>
+              <p className="landing__tech-txt">Modern and responsive fictional real estate website built using React, TypeScript, and Tailwind CSS. It showcases property listings, highlights key features, and provides an intuitive user interface designed for seamless browsing and navigation.</p>
               <div className="landing__project-btn-wrap">
                 <a
                   href="https://acme-real-estate.netlify.app/"
@@ -306,6 +291,13 @@ function App() {
                     src="./img/react-logo.png"
                     className="landing__tech-logo"
                     alt="ReactJs Logo"
+                  />
+                </div>
+                <div className="landing__tech">
+                  <img
+                    src="./img/typescript.png"
+                    className="landing__tech-logo"
+                    alt="TypeScript Logo"
                   />
                 </div>
                 <div className="landing__tech">

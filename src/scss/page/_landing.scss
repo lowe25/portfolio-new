@@ -66,9 +66,8 @@
     &--project {
       margin-top: 40px;
       align-items: center;
-      justify-content: flex-start;
+      flex-direction: column;
       gap: 17px;
-      flex-wrap: wrap;
     }
   }
 
@@ -196,12 +195,16 @@
 
   &__project-blk {
     width: 100%;
-    max-width: 477px;
     border: 2px solid color.$white;
     padding: 15px;
-    @include mq.sp {
-      max-width: initial;
-    }
+  }
+
+  &__project-img {
+    display: block;
+    max-width: 100px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
   }
 
   &__project-btn-wrap {
@@ -238,6 +241,13 @@
     font-size: 2.6rem;
     font-family: ff.$Raleway;
     font-weight: 700;
+  }
+
+  &__tech-txt {
+    display: block;
+    margin-block: 10px;
+    font-size: 1.6rem;
+    font-family: ff.$Monter;
   }
 
   &__tech-wrap {
