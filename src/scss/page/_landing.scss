@@ -62,12 +62,46 @@
   &__section-wrap {
     display: flex;
     justify-content: center;
+    gap: 17px;
 
     &--project {
       margin-top: 40px;
       align-items: center;
       flex-direction: column;
-      gap: 17px;
+    }
+  }
+
+  &__section-other-proj {
+    margin-top: 100px;
+    @include mq.sp {
+      margin-top: 50px;
+    }
+  }
+
+  &__project-other-wrap {
+    height: 386px;
+    overflow-y: auto;
+    border-radius: 10px;
+    @include mq.sp {
+      height: 200px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  &__proj-wrap {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 586px);
+    gap: 25px;
+    @include mq.max(1249px) {
+      margin-top: 50px;
+      grid-template-columns: repeat(auto-fill, 100%);
     }
   }
 
@@ -81,8 +115,10 @@
   }
 
   &__about {
+    position: relative;
     background-color: color.$black-292;
     padding: 50px 0;
+    overflow: hidden;
   }
 
   &__about-desc {
@@ -180,11 +216,15 @@
 
   &__job-item {
     margin-bottom: 5px;
+    font-weight: 400;
   }
 
   &__projects {
     background-color: color.$black-2d2;
     padding: 50px 0 100px;
+    @include mq.sp {
+      padding-bottom: 50px;
+    }
   }
 
   &__project-list {
@@ -195,16 +235,30 @@
 
   &__project-blk {
     width: 100%;
-    border: 2px solid color.$white;
-    padding: 15px;
   }
 
-  &__project-img {
-    display: block;
-    max-width: 100px;
-    width: 100%;
-    max-height: 100px;
-    height: 100%;
+  &__project-col {
+    display: flex;
+    gap: 20px;
+    @include mq.sp {
+      flex-direction: column;
+    }
+  }
+
+  &__project-img-wrap {
+    flex: 1 2 100%;
+    height: 240px;
+    overflow-y: auto;
+    border-radius: 10px;
+    @include mq.sp {
+      flex: none;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
   &__project-btn-wrap {
@@ -226,7 +280,6 @@
     border: 1px solid color.$white;
     color: color.$white;
     font-size: 1.6rem;
-    font-family: ff.$Monter;
     text-decoration: none;
 
     &:hover {
@@ -237,61 +290,107 @@
 
   &__tech-abt {
     display: block;
-    text-align: center;
+    margin-block: 5px;
     font-size: 2.6rem;
-    font-family: ff.$Raleway;
     font-weight: 700;
+    @include mq.sp {
+      font-size: 20px;
+    }
   }
 
-  &__tech-txt {
+  &__test {
+    flex: 1 1 60%;
+  }
+
+  &__img {
     display: block;
-    margin-block: 10px;
-    font-size: 1.6rem;
-    font-family: ff.$Monter;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__img2 {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    @include mq.sp {
+      height: auto;
+    }
   }
 
   &__tech-wrap {
+    list-style: none;
     margin-top: 15px;
     display: flex;
-    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    &--no-wrap {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__tech {
+    display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
+    padding: 10px;
+    background-color: #242424;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  &__tech-txt {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    @include mq.sp {
+      font-size: 13px;
+    }
+
+    &--lang {
+      font-size: 1.4rem;
+      @include mq.sp {
+        font-size: 12px;
+      }
+    }
   }
 
   &__tech-logo {
-    height: 40px;
+    height: 25px;
   }
 
   &__skills {
     margin-top: 40px;
   }
 
-  &__skills-wrap {
+  &__skills-blk {
+    &:last-child {
+      margin-top: 30px;
+    }
+  }
+
+  &__skills-list {
+    margin-top: 5px;
+    list-style: none;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     @include mq.sp {
       gap: 10px;
-      justify-content: space-around;
-    }
-  }
-
-  &__skills-block {
-    margin-top: 20px;
-  }
-
-  &__skills-img {
-    width: 80px;
-    height: 80px;
-    @include mq.sp {
-      width: 50px;
-      height: 50px;
     }
   }
 
   &__contact {
     background-color: color.$black-292;
     padding: 50px 0 30px;
+  }
+
+  &__contact-btn {
+    margin: 20px 0 20px;
+    display: flex;
+    justify-content: center;
   }
 
   &__contact-txt {
@@ -302,10 +401,8 @@
   }
 
   &__contact-wrap {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     gap: 20px;
   }
 
@@ -317,7 +414,6 @@
 
   &__contact-link-txt {
     text-decoration: none;
-    font-family: ff.$Monter;
     font-size: 1.8rem;
     color: color.$white;
     @include mq.sp {
@@ -328,9 +424,5 @@
   &__contact-logo {
     width: 30px;
     height: 30px;
-
-    &-img2 {
-      object-fit: cover;
-    }
   }
 }

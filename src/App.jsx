@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./scss/main.scss";
+import Tech from "./components/Tech";
 
 function App() {
   return (
@@ -73,70 +74,30 @@ function App() {
 
           <div className="landing__skills" data-aos="fade-up" data-aos-easing="linear"
             data-aos-duration="1500">
-            <h2 className="landing__exp-heading">Skills</h2>
-            <div className="landing__skills-wrap">
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/html.png"
-                  alt="HTML Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/css.png"
-                  alt="CSS Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/javascript.png"
-                  alt="JavaScript Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/react-logo.png"
-                  alt="HTML Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/pugjs.jpg"
-                  alt="PugJs Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/sass.png"
-                  alt="Scss Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/typescript.png"
-                  alt="TypeScript Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/tailwind-logo.svg"
-                  alt="TypeScript Logo"
-                />
-              </div>
-              <div className="landing__skills-block">
-                <img
-                  className="landing__skills-img"
-                  src="/img/github.png"
-                  alt="github Logo"
-                />
+            <div className="landing__skills-blk">
+              <h2 className="landing__exp-heading">Front End</h2>
+              <ul className="landing__skills-list">
+                <Tech techImg={'html.png'} techAlt={'HTML Logo'} tech={'HTML'} />
+                <Tech techImg={'css.png'} techAlt={'CSS Logo'} tech={'CSS'} />
+                <Tech techImg={'javascript.png'} techAlt={'JavaScript Logo'} tech={'JavaScript'} />
+                <Tech techImg={'react-logo.png'} techAlt={'ReactJS Logo'} tech={'ReactJS'} />
+                <Tech techImg={'pugjs.jpg'} techAlt={'PugJS Logo'} tech={'PugJS'} />
+                <Tech techImg={'sass.png'} techAlt={'SCSS Logo'} tech={'SASS'} />
+                <Tech techImg={'tailwind-logo.svg'} techAlt={'Tailwind Logo'} tech={'Tailwind CSS'} />
+                <Tech techImg={'wordpress.png'} techAlt={'WordPress Logo'} tech={'Wordpress'} />
+
+              </ul>
+            </div>
+
+            <div className="landing__skills-blk">
+              <h2 className="landing__exp-heading">Tools</h2>
+              <div className="landing__skills-wrap">
+                <ul className="landing__skills-list">
+                  <Tech techImg={'git.png'} techAlt={'Git Logo'} tech={'Git'} />
+                  <Tech techImg={'github.png'} techAlt={'Github Logo'} tech={'Github'} />
+                  <Tech techImg={'gitlab.png'} techAlt={'Gitlab Logo'} tech={'Gitlab'} />
+                  <Tech techImg={'vscode.png'} techAlt={'Vscode Logo'} tech={'Vscode'} />
+                </ul>
               </div>
             </div>
           </div>
@@ -144,170 +105,179 @@ function App() {
       </section>
 
       <section className="landing__projects" id="projects">
-        <div className="container" data-aos="zoom-in-down" data-aos-easing="linear"
-          data-aos-duration="1500">
+        <div className="container">
           <div className="landing__section-wrap">
-            <h1 className="landing__section-title">Projects</h1>
+            <h1 className="landing__section-title">Featured Projects</h1>
           </div>
           <div className="landing__section-wrap landing__section-wrap--project">
-            <div className="landing__project-blk">
-              <span className="landing__tech-abt">Photography Website</span>
-              <div>
-                <p className="landing__tech-txt">This is a responsive static portfolio website built using React.js and SCSS. It showcases my frontend development skills, with smooth transitions, clean design, and a focus on performance. The site is structured to highlight my projects, skills, and experience as a developer.</p>
+            <article className="landing__project-blk" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-duration="1500">
+              <div className="landing__project-col">
+                <div className="landing__test">
+                  <span className="landing__tech-abt">SMICA</span>
+                  <div>
+                    <p className="landing__tech-txt">A clean and responsive real estate website built using modern web design principles. It features listing previews, company details, and contact sections—offering visitors an intuitive browsing experience while showcasing services and properties clearly.</p>
+                  </div>
+                  <div>
+                    <ul className="landing__tech-wrap">
+                      <Tech techImg={'pugjs.jpg'} techAlt={'PugJS Logo'} tech={'Pug JS'} />
+                      <Tech techImg={'sass.png'} techAlt={'SCSS Logo'} tech={'SASS/SCSS'} />
+                      <Tech techImg={'typescript.png'} techAlt={'TypeScript Logo'} tech={'TypeScript'} />
+                      <Tech techImg={'wordpress.png'} techAlt={'WordPress Logo'} tech={'Wordpress'} />
+                    </ul>
+                  </div>
+                </div>
+                <div className="landing__project-img-wrap">
+                  <img className="landing__img" src="/img/smica.png" alt="SMICA Landing" />
+                </div>
               </div>
-              <div className="landing__project-btn-wrap">
-                <a
-                  href="https://pensive-goodall-adf491.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="landing__project-btn"
-                >
-                  Demo
-                </a>
-              </div>
+            </article>
 
-              <span className="landing__tech-abt">Written In:</span>
-              <div className="landing__tech-wrap">
-                <div className="landing__tech">
-                  <img
-                    src="./img/react-logo.png"
-                    className="landing__tech-logo"
-                    alt="ReactJs Logo"
-                  />
+            <article className="landing__project-blk" data-aos="fade-right" data-aos-easing="linear"
+              data-aos-duration="1500">
+              <div className="landing__project-col">
+                <div className="landing__test">
+                  <span className="landing__tech-abt">Secom</span>
+                  <div>
+                    <p className="landing__tech-txt">This comic-style recruitment website was designed to creatively communicate SECOM’s mission, work culture, and employee experiences. It uses engaging illustrations and storytelling to attract potential candidates and make complex information accessible and fun.</p>
+                  </div>
+                  <div>
+                    <ul className="landing__tech-wrap">
+                      <Tech techImg={'pugjs.jpg'} techAlt={'Pug JS Logo'} tech={'Pug JS'} />
+                      <Tech techImg={'sass.png'} techAlt={'SCSS Logo'} tech={'SASS/SCSS'} />
+                      <Tech techImg={'typescript.png'} techAlt={'TypeScript Logo'} tech={'TypeScript'} />
+                    </ul>
+                  </div>
                 </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/sass.png"
-                    className="landing__tech-logo"
-                    alt="SASS Image1"
-                  />
+                <div className="landing__project-img-wrap">
+                  <img className="landing__img" src="/img/secom.png" alt="Secom Landing" />
                 </div>
               </div>
+            </article>
+          </div>
+
+          <div className="landing__section-other-proj">
+            <div className="landing__section-wrap">
+              <h1 className="landing__section-title">Personal Projects</h1>
             </div>
-            <div className="landing__project-blk">
-              <span className="landing__tech-abt">
-                Emman CCTV Website
-              </span>
-              <p className="landing__tech-txt">A clean and responsive landing page built with React, TypeScript, and Tailwind CSS. This project showcases a modern layout for Emman CCTV a computer services company located in panguil laguna, featuring smooth navigation, consistent design elements, and mobile-friendly responsiveness.</p>
-              <div className="landing__project-btn-wrap">
-                <a
-                  href="https://lowe25.github.io/company-landing/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="landing__project-btn"
-                >
-                  Demo
-                </a>
-              </div>
+            <div className="landing__proj-wrap" data-aos="fade-up" data-aos-easing="linear"
+              data-aos-duration="1500">
+              <article className="landing__project-blk">
+                <div className="landing__project-other-wrap">
+                  <a href="https://lowe25.github.io/company-landing/" target="_blank" rel="noopener noreferrer">
+                    <img className="landing__img2" src="/img/emman-cctv.png" alt="Emman CCTV Landing" />
+                  </a>
+                </div>
+                <span className="landing__tech-abt">
+                  Emman CCTV Website
+                </span>
+                <ul className="landing__tech-wrap">
+                  <li className="landing__tech">
+                    <img
+                      src="./img/react-logo.png"
+                      className="landing__tech-logo"
+                      alt="ReactJS Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">React JS</p>
 
-              <span className="landing__tech-abt">Written In:</span>
-              <div className="landing__tech-wrap">
-                <div className="landing__tech">
-                  <img
-                    src="./img/react-logo.png"
-                    className="landing__tech-logo"
-                    alt="ReactJs Logo"
-                  />
-                </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/typescript.png"
-                    className="landing__tech-logo"
-                    alt="TypeScript Logo"
-                  />
-                </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/tailwind-logo.svg"
-                    className="landing__tech-logo"
-                    alt="Tailwind CSS Logo"
-                  />
-                </div>
-              </div>
-            </div>
+                  </li>
+                  <li className="landing__tech">
+                    <img
+                      src="./img/tailwind-logo.svg"
+                      className="landing__tech-logo"
+                      alt="Tailwind Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">Tailwind CSS</p>
 
+                  </li>
+                  <li className="landing__tech">
+                    <img
+                      src="./img/typescript.png"
+                      className="landing__tech-logo"
+                      alt="TypeScript Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">TypeScript</p>
+                  </li>
+                </ul>
+              </article>
 
-            <div className="landing__project-blk">
-              <span className="landing__tech-abt">
-                Biography Website
-              </span>
-              <p className="landing__tech-txt">A sleek and responsive biography website built with React, TypeScript, and Tailwind CSS. It features a structured layout to showcase personal profiles of the late Kobe Bryant, with a clean design and smooth user experience across all devices.</p>
-              <div className="landing__project-btn-wrap">
-                <a
-                  href="https://biography-site.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="landing__project-btn"
-                >
-                  Demo
-                </a>
-              </div>
+              <article className="landing__project-blk">
+                <div className="landing__project-other-wrap">
+                  <a href="https://biography-site.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img className="landing__img2" src="/img/biblography.png" alt="Biography Site" />
+                  </a>
+                </div>
+                <span className="landing__tech-abt">
+                  Biography Website
+                </span>
+                <ul className="landing__tech-wrap ">
+                  <li className="landing__tech">
+                    <img
+                      src="./img/react-logo.png"
+                      className="landing__tech-logo"
+                      alt="ReactJS Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">React JS</p>
 
-              <span className="landing__tech-abt">Written In:</span>
-              <div className="landing__tech-wrap">
-                <div className="landing__tech">
-                  <img
-                    src="./img/react-logo.png"
-                    className="landing__tech-logo"
-                    alt="ReactJs Logo"
-                  />
-                </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/typescript.png"
-                    className="landing__tech-logo"
-                    alt="TypeScript Logo"
-                  />
-                </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/tailwind-logo.svg"
-                    className="landing__tech-logo"
-                    alt="Tailwind CSS Logo"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="landing__project-blk">
-              <span className="landing__tech-abt">
-                ACME Real Estate Website
-              </span>
-              <p className="landing__tech-txt">Modern and responsive fictional real estate website built using React, TypeScript, and Tailwind CSS. It showcases property listings, highlights key features, and provides an intuitive user interface designed for seamless browsing and navigation.</p>
-              <div className="landing__project-btn-wrap">
-                <a
-                  href="https://acme-real-estate.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="landing__project-btn"
-                >
-                  Demo
-                </a>
-              </div>
+                  </li>
+                  <li className="landing__tech">
+                    <img
+                      src="./img/tailwind-logo.svg"
+                      className="landing__tech-logo"
+                      alt="Tailwind Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">Tailwind CSS</p>
 
-              <span className="landing__tech-abt">Written In:</span>
-              <div className="landing__tech-wrap">
-                <div className="landing__tech">
-                  <img
-                    src="./img/react-logo.png"
-                    className="landing__tech-logo"
-                    alt="ReactJs Logo"
-                  />
+                  </li>
+                  <li className="landing__tech">
+                    <img
+                      src="./img/typescript.png"
+                      className="landing__tech-logo"
+                      alt="TypeScript Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">TypeScript</p>
+                  </li>
+                </ul>
+              </article>
+
+              <article className="landing__project-blk">
+                <div className="landing__project-other-wrap">
+                  <a href="https://acme-real-estate.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img className="landing__img2" src="/img/acme.png" alt="Acme Realestate" />
+                  </a>
                 </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/typescript.png"
-                    className="landing__tech-logo"
-                    alt="TypeScript Logo"
-                  />
-                </div>
-                <div className="landing__tech">
-                  <img
-                    src="./img/tailwind-logo.svg"
-                    className="landing__tech-logo"
-                    alt="Tailwind CSS Logo"
-                  />
-                </div>
-              </div>
+                <span className="landing__tech-abt">
+                  ACME Real Estate Website
+                </span>
+                <ul className="landing__tech-wrap">
+                  <li className="landing__tech">
+                    <img
+                      src="./img/react-logo.png"
+                      className="landing__tech-logo"
+                      alt="ReactJS Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">React JS</p>
+
+                  </li>
+                  <li className="landing__tech">
+                    <img
+                      src="./img/tailwind-logo.svg"
+                      className="landing__tech-logo"
+                      alt="Tailwind Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">Tailwind CSS</p>
+
+                  </li>
+                  <li className="landing__tech">
+                    <img
+                      src="./img/typescript.png"
+                      className="landing__tech-logo"
+                      alt="TypeScript Logo"
+                    />
+                    <p className="landing__tech-txt landing__tech-txt--lang">TypeScript</p>
+                  </li>
+                </ul>
+              </article>
             </div>
           </div>
         </div>
@@ -321,48 +291,36 @@ function App() {
           <p className="landing__contact-txt">
             Let's get in touch!
           </p>
+          <div className="landing__contact-btn">
+            <a href="/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" className="landing__nav-link">
+              View Resume
+            </a>
+          </div>
           <div className="landing__contact-wrap">
             <div className="landing__contact-block">
-              <div>
+              <a
+                href="mailto:louiealdrin25@gmail.com"
+                rel="noopener noreferrer"
+                className="landing__contact-link-txt"
+              >
                 <img
                   className="landing__contact-logo"
                   src="/img/gmail.png"
                   alt="Gmail Logo"
                 />
-              </div>
-              <a
-                href="mailto: louiealdrin25@gmail.com"
-                className="landing__contact-link-txt"
-              >
-                louiealdrin25@gmail.com
               </a>
             </div>
             <div className="landing__contact-block">
-              <div>
+              <a
+                href="https://www.linkedin.com/in/louie-aldrin-cabral/"
+                target="_blank"
+                className="landing__contact-link-txt"
+              >
                 <img
                   className="landing__contact-logo"
                   src="/img/linkedin.png"
                   alt="Linkedin Logo"
                 />
-              </div>
-              <a
-                href="https://www.linkedin.com/in/louie-aldrin-cabral-992040194/"
-                target="_blank"
-                className="landing__contact-link-txt"
-              >
-                https://www.linkedin.com/in/louie-aldrin-cabral/
-              </a>
-            </div>
-            <div className="landing__contact-block">
-              <div>
-                <img
-                  className="landing__contact-logo landing__contact-logo--img2"
-                  src="/img/smartphone.png"
-                  alt="Smartphone Logo"
-                />
-              </div>
-              <a href="tel: 09064935258" className="landing__contact-link-txt">
-                09064935258
               </a>
             </div>
           </div>
