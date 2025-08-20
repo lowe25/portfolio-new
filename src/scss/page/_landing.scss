@@ -413,6 +413,8 @@
   }
 
   &__contact-link-txt {
+    position: relative;
+    z-index: 2;
     text-decoration: none;
     font-size: 1.8rem;
     color: color.$white;

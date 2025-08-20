@@ -80,6 +80,7 @@ function App() {
                 <Tech techImg={'html.png'} techAlt={'HTML Logo'} tech={'HTML'} />
                 <Tech techImg={'css.png'} techAlt={'CSS Logo'} tech={'CSS'} />
                 <Tech techImg={'javascript.png'} techAlt={'JavaScript Logo'} tech={'JavaScript'} />
+                <Tech techImg={'typescript.png'} techAlt={'TypeScript Logo'} tech={'TypeScript'} />
                 <Tech techImg={'react-logo.png'} techAlt={'ReactJS Logo'} tech={'ReactJS'} />
                 <Tech techImg={'pugjs.jpg'} techAlt={'PugJS Logo'} tech={'PugJS'} />
                 <Tech techImg={'sass.png'} techAlt={'SCSS Logo'} tech={'SASS'} />
