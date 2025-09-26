@@ -86,7 +86,6 @@ function App() {
                 <Tech techImg={'sass.png'} techAlt={'SCSS Logo'} tech={'SASS'} />
                 <Tech techImg={'tailwind-logo.svg'} techAlt={'Tailwind Logo'} tech={'Tailwind CSS'} />
                 <Tech techImg={'wordpress.png'} techAlt={'WordPress Logo'} tech={'Wordpress'} />
-
               </ul>
             </div>
 
@@ -289,9 +288,6 @@ function App() {
           <div className="landing__section-wrap">
             <h1 className="landing__section-title">Contact</h1>
           </div>
-          <p className="landing__contact-txt">
-            Let's get in touch!
-          </p>
           <div className="landing__contact-btn">
             <a href="/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" className="landing__nav-link">
               View Resume
@@ -300,7 +296,8 @@ function App() {
           <div className="landing__contact-wrap">
             <div className="landing__contact-block">
               <a
-                href="mailto:louiealdrin25@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=louiealdrin25@gmail.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="landing__contact-link-txt"
               >
