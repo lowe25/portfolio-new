@@ -9,7 +9,7 @@ function App() {
         <div data-aos="zoom-in-down">
           <div className="landing__desc">
             <h1 className="landing__desc-heading">
-              Hi there! I'm Louie and I'm a seasoned Front-End Developer
+              Hi there! I'm Louie and I'm a Front-End Developer
             </h1>
           </div>
           <div className="landing__nav">
@@ -38,9 +38,10 @@ function App() {
               alt="Profile Picture"
               className="landing__about-img"
             />
-            <span className="landing__about-txt">
-              My name is Louieand I'm a Front-End Developer based in the Philippines with 3 years of experience in the industry, a proven track record of developing exceptional UI and translating wireframes into high-quality, responsive code Using PugJS, SCSS and TypeScript.
-            </span>
+            <p className="landing__about-txt">
+              My name is Louie, and I’m a Front-End Developer based in the Philippines with 3 years of experience in the industry. I have a proven track record of developing exceptional user interfaces and translating wireframes into high-quality, responsive code using PugJS, SCSS, and TypeScript.
+              In addition to my professional experience, I’ve also worked on several personal projects using React and Tailwind CSS, allowing me to further expand my skills in building modern, dynamic web applications.
+            </p>
           </div>
 
           <div className="landing__exp" data-aos="fade-left" data-aos-easing="linear"
