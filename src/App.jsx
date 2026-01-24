@@ -1,8 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./scss/main.scss";
 import Tech from "./components/Tech";
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
+  const year = new Date();
   return (
     <>
       <section className="landing__mv">
@@ -47,30 +49,24 @@ function App() {
           <div className="landing__exp" data-aos="fade-left" data-aos-easing="linear"
             data-aos-duration="1500">
             <h2 className="landing__exp-heading">Work Experince</h2>
-            <div className="landing__exp-box">
-              <div className="landing__job">
-                <span className="landing__job-type">
-                  Front End Engineer / Upward Next Inc
-                </span>
-                <span className="landing__job-date">Aug 2022 - Present</span>
-              </div>
-              <div className="landing__job-desc">
-                <ul className="landing__job-list">
-                  <li className="landing__job-item">
-                    Translate Adobe XD/ Illustrator and Figma designs into
-                    responsive static websites. Using PugJs, SASS and
-                    TypeScript.
-                  </li>
-                  <li className="landing__job-item">
-                    Add functionality to static websites using WordPress plugins
-                    ACF and MWWP Form.
-                  </li>
-                  <li className="landing__job-item">Optimized website load times by using Lazy Loading.</li>
-                  <li className="landing__job-item">Working with version control systems and source code management tools (e.g., Use Git, GitLab) to keep track of code.</li>
-                  <li className="landing__job-item"> Conducted code reviews with other developers to ensure adherence to coding standards and improve maintainability.</li>
-                </ul>
-              </div>
-            </div>
+            <WorkExperience
+              compName={'Upward Next Inc / Front End Engineer'}
+              date={'August 2022 - October 2025'}
+              respoList={[
+                "Translate Adobe XD/Illustrator and Figma designs into responsive static websites using PugJs, SASS, and TypeScript.",
+                "Add functionality to static websites using WordPress plugins such as ACF and MW WP Form.",
+                "Optimized website load times by using lazy loading.",
+                "Worked with version control systems and source code management tools (e.g., Git, GitLab).",
+                "Conducted code reviews with other developers to ensure adherence to coding standards and improve maintainability."
+              ]}
+            />
+            <WorkExperience
+              compName={'Wisdom Plus Incorporated / Software Developer'}
+              date={'November 2025 - Present'}
+              respoList={[
+                "Assisted in debugging and enhancing In-house web applications built with the Symfony framework",
+                "Implemented new features and improvements based on project requirements"
+              ]} />
           </div>
 
           <div className="landing__skills" data-aos="fade-up" data-aos-easing="linear"
@@ -173,32 +169,9 @@ function App() {
                   Emman CCTV Website
                 </span>
                 <ul className="landing__tech-wrap">
-                  <li className="landing__tech">
-                    <img
-                      src="./img/react-logo.png"
-                      className="landing__tech-logo"
-                      alt="ReactJS Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">React JS</p>
-
-                  </li>
-                  <li className="landing__tech">
-                    <img
-                      src="./img/tailwind-logo.svg"
-                      className="landing__tech-logo"
-                      alt="Tailwind Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">Tailwind CSS</p>
-
-                  </li>
-                  <li className="landing__tech">
-                    <img
-                      src="./img/typescript.png"
-                      className="landing__tech-logo"
-                      alt="TypeScript Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">TypeScript</p>
-                  </li>
+                  <Tech techImg={'react-logo.png'} techAlt={'ReactJS Logo'} tech={'ReactJS'} />
+                  <Tech techImg={'tailwind-logo.svg'} techAlt={'Tailwind Logo'} tech={'Tailwind CSS'} />
+                  <Tech techImg={'typescript.png'} techAlt={'TypeScript Logo'} tech={'TypeScript'} />
                 </ul>
               </article>
 
@@ -212,32 +185,9 @@ function App() {
                   Biography Website
                 </span>
                 <ul className="landing__tech-wrap ">
-                  <li className="landing__tech">
-                    <img
-                      src="./img/react-logo.png"
-                      className="landing__tech-logo"
-                      alt="ReactJS Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">React JS</p>
-
-                  </li>
-                  <li className="landing__tech">
-                    <img
-                      src="./img/tailwind-logo.svg"
-                      className="landing__tech-logo"
-                      alt="Tailwind Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">Tailwind CSS</p>
-
-                  </li>
-                  <li className="landing__tech">
-                    <img
-                      src="./img/typescript.png"
-                      className="landing__tech-logo"
-                      alt="TypeScript Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">TypeScript</p>
-                  </li>
+                  <Tech techImg={'react-logo.png'} techAlt={'ReactJS Logo'} tech={'ReactJS'} />
+                  <Tech techImg={'tailwind-logo.svg'} techAlt={'Tailwind Logo'} tech={'Tailwind CSS'} />
+                  <Tech techImg={'typescript.png'} techAlt={'TypeScript Logo'} tech={'TypeScript'} />
                 </ul>
               </article>
 
@@ -251,32 +201,9 @@ function App() {
                   ACME Real Estate Website
                 </span>
                 <ul className="landing__tech-wrap">
-                  <li className="landing__tech">
-                    <img
-                      src="./img/react-logo.png"
-                      className="landing__tech-logo"
-                      alt="ReactJS Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">React JS</p>
-
-                  </li>
-                  <li className="landing__tech">
-                    <img
-                      src="./img/tailwind-logo.svg"
-                      className="landing__tech-logo"
-                      alt="Tailwind Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">Tailwind CSS</p>
-
-                  </li>
-                  <li className="landing__tech">
-                    <img
-                      src="./img/typescript.png"
-                      className="landing__tech-logo"
-                      alt="TypeScript Logo"
-                    />
-                    <p className="landing__tech-txt landing__tech-txt--lang">TypeScript</p>
-                  </li>
+                  <Tech techImg={'react-logo.png'} techAlt={'ReactJS Logo'} tech={'ReactJS'} />
+                  <Tech techImg={'tailwind-logo.svg'} techAlt={'Tailwind Logo'} tech={'Tailwind CSS'} />
+                  <Tech techImg={'typescript.png'} techAlt={'TypeScript Logo'} tech={'TypeScript'} />
                 </ul>
               </article>
             </div>
@@ -328,7 +255,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer__container">
-          <h2>Copyright 2025. All rights reserved.</h2>
+          <h2>{`Copyright ${year.getFullYear()}. All rights reserved.`}</h2>
         </div>
       </footer>
     </>
